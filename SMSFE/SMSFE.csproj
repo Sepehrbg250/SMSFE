@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Worker;Microsoft.NET.Sdk.Publish">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>dotnet-SMSFE-DA8C805F-B70C-4478-AE41-4CCF7D230460</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="log4net" Version="2.0.8" />
+    <PackageReference Include="Microsoft.AspNetCore" Version="2.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.0-preview.7.20365.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.0-preview.7.20365.15">
+      
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.0-preview.7.20365.15" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0-preview.7.20364.11" />
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.9.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Rebex.Common">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Ews">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Ews.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Imap">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Imap.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Mail">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Mail.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Networking">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Pop3">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Pop3.dll</HintPath>
+    </Reference>
+    <Reference Include="Rebex.Smtp">
+      <HintPath>..\..\..\..\Desktop\SM\Rebex.Smtp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

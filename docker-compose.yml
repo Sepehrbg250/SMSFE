@@ -1,0 +1,22 @@
+version: '3.4'
+
+services:
+  sqlserverService:  
+    image: microsoft/mssql-server-linux:2017-latest  
+    hostname: 'localhost'  
+    environment:  
+      ACCEPT_EULA: Y  
+      SA_PASSWORD: "BigPassw0rd"  
+    volumes:  
+      - ./data/mssql:/var/opt/mssql3
+    ports:  
+      - '1433:1433'  
+    expose:  
+      - 1433
+  smsfe:
+    image: ${DOCKER_REGISTRY-}smsfe
+    build:
+      context: .
+      dockerfile: SMSFE/Dockerfile
+  
+    
